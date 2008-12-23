@@ -6,8 +6,8 @@ Some extensions I make to complete some functionality I'm missing.
 
 First you'll have to retrieve a copy of this repo. I would recommend this:
 
-    cd your/rails/tree/lib
-    git submodule add git://github.com/ragnar/myrailsextensions.git myrailsextensions
+    cd your/rails/tree
+    git submodule add git://github.com/ragnar/myrailsextensions.git lib/myrailsextensions
     git add .gitmodules lib/myrailsextensions
     git commit -m"Added myrailsextensions submodule."
 
