@@ -1,0 +1,32 @@
+= MyRailsExtensions
+
+Some extensions I make to complete some functionality I'm missing.
+
+== Loading
+
+First you'll have to retrieve a copy of this repo. I would recommend this:
+
+    cd your/rails/tree/lib
+    git submodule add git://github.com/ragnar/myrailsextensions.git myrailsextensions
+    git add .gitmodules lib/myrailsextensions
+    git commit -m"Added myrailsextensions submodule."
+
+
+Modify your config/envirionment.rb with this at the bottom:
+
+    require 'lib/myrailsextensions/init.rb'
+
+
+== To do
+
+* Add versioning support and load the version that matches the rails version or the plugin version.
+
+
+== Warning
+
+I will not make my best to make this work with any version of rails or any version
+of the plugins I make improvements/changes to. It will be changed as I see fit to
+match the versions I use myself.
+
+
+Copyright (c) 2009 Ragnar Henriksen, released under the MIT license
