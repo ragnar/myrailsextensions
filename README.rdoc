@@ -16,6 +16,12 @@ Modify your config/envirionment.rb with this at the bottom:
 
     require 'lib/myrailsextensions/init.rb'
 
+== Updating
+
+    cd your/rails/tree/lib/myrailsextensions
+    git pull
+    git commit -m"Updated myrailsextensions"
+
 
 == To do
 
