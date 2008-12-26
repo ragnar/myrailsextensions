@@ -18,9 +18,21 @@ Modify your config/envirionment.rb with this at the bottom:
 
 == Updating
 
-    cd your/rails/tree/lib/myrailsextensions
-    git pull
-    git commit -m"Updated myrailsextensions"
+When you add the submodule it will automatically check out the module. When
+you need to update the module, you do it like this:
+
+    cd your/rails/tree
+    git submodule update [lib/myrailsextensions]
+
+The path to this command is optional. If it is left out all registered
+submodules will be updated. When you clone your repository to a nother
+location and you have added a submodule, you will also need to manually
+check out the submodules. This is how you do that:
+
+    cd your/rails/tree
+    git submodule update --init [lib/myrailsextensions]
+
+Again the path is optional with the same behaviour as before.
 
 
 == To do
@@ -30,9 +42,9 @@ Modify your config/envirionment.rb with this at the bottom:
 
 == Warning
 
-I will not make my best to make this work with any version of rails or any version
-of the plugins I make improvements/changes to. It will be changed as I see fit to
-match the versions I use myself.
+I will not make my best to make this work with any version of rails or any
+version of the plugins I make improvements/changes to. It will be changed as I
+see fit to match the versions I use myself.
 
 
-Copyright (c) 2009 Ragnar Henriksen, released under the MIT license
+Copyright (c) 2009 Ragnar Henriksen, released under the MIT license.
