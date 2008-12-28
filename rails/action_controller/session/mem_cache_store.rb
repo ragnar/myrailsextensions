@@ -12,4 +12,4 @@ class CGI
         end
 end
 
-STDERR.puts "**  Loaded ActionController::Session::MemCacheStore extensions."
+STDERR.puts "**   Loaded ActionController::Session::MemCacheStore extensions."

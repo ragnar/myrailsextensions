@@ -42,4 +42,4 @@ module ActionView::Helpers::AssetTagHelper
         end
 end
 
-STDERR.puts "**  Loaded ActionView::Helpers::AssetTagHelper extensions."
+STDERR.puts "**   Loaded ActionView::Helpers::AssetTagHelper extensions."

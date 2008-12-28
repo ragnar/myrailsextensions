@@ -31,4 +31,4 @@ module ActiveRecord
         end
 end
 
-STDERR.puts "**  Loaded acts_as_list extensions."
+STDERR.puts "**   Loaded acts_as_list extensions."
