@@ -30,9 +30,22 @@ location and you have added a submodule, you will also need to manually
 check out the submodules. This is how you do that:
 
     cd your/rails/tree
-    git submodule update --init [lib/myrailsextensions]
+    git submodule init [lib/myrailsextensions]
 
 Again the path is optional with the same behaviour as before.
+
+It also turns out that someone must be in charge of updating the submodule
+reference. One must be incharge of updating the reference with this:
+
+    cd your/rails/tree/lib/myrailsextensions
+    git checkout master
+    git pull
+    cd ../..
+    git add lib/myrailsextensions
+    git commit -m"Updated myrailsextensions"
+
+Others just use the previous method after a pull on the main branch. (When the
+submodule have been updated.)
 
 
 == To do
